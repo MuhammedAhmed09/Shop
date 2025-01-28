@@ -1,0 +1,35 @@
+.ourNav i {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.header {
+    top: 0;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+
+    .ourNav i {
+        display: block;
+    }
+
+    .ourNav ul {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        flex-direction: column;
+        background: #333;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        transition: .4s;
+    }
+
+    .ourNav ul li {
+        padding:15px;
+    }
+}
