@@ -4,7 +4,7 @@ const Tip = () => {
   return (
     <div className='px-[15%] grid sm:grid-cols-2 h-fit items-center my-5'>
         <div>
-            <img src="public/Image/home-1.jpg" className='w-4/5' alt="sofa" />
+            <img src="/Image/home-1.jpg" className='w-4/5' alt="sofa" />
         </div>
         <div className='text-start w-3/3'>
             <p className='sm:text-3xl text-2xl font-serif mb-2'>SUPER <span className='text-rose-800'>SAVINGS</span></p>
