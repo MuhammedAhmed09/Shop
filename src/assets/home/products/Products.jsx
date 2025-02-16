@@ -11,7 +11,7 @@ const Products = () => {
     console.log(data.data);
     
   return (
-    <div className='grid grid-cols-1 gap-6 px-[15%] overflow-hidden py-8 h-auto container sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5'>
+    <div className='grid grid-cols-1 gap-6 px-[15%] overflow-hidden py-8 h-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5'>
         {products.map((product) => (
             <div key={product.id} className='rounded p-5 shadow-sm h-auto flex-wrap hover:{"top-10"}'>
             <img className='h-48 w-full px-8 border-b' src={product.image} alt={product.title}/>
