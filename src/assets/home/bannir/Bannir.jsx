@@ -23,10 +23,10 @@ const Bannir = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-            <img src='/Image/bg-1.jpg' alt="open" className='w-full h-[80vw] sm:h-[40vw]'/>
+            <img src='/Image/bg-2.jpg' alt="open" className='w-full h-[80vw] sm:h-[40vw]'/>
         </SwiperSlide>
         <SwiperSlide>
-            <img src='/Image/bg-2.jpg' alt="open" className='w-full h-[80vw] sm:h-[40vw]' />
+            <img src='/Image/bg-1.jpg' alt="open" className='w-full h-[80vw] sm:h-[40vw]' />
         </SwiperSlide>
         <SwiperSlide>
             <img src='/Image/bg-3.jpg' alt="open" className='w-full h-[80vw] sm:h-[40vw]' />

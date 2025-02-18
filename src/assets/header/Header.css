@@ -3,6 +3,12 @@
     cursor: pointer;
     font-size: 20px;
 }
+li {
+    position: relative;
+    padding: 1px 8%;
+    margin: 0 3px;
+    transition: .4s;
+}
 
 .header {
     top: 0;
@@ -19,10 +25,11 @@
 
     .ourNav ul {
         position: absolute;
+        height: fit-content;
         top: 55px;
         left: 0;
         flex-direction: column;
-        background: #333;
+        background: #3333;
         width: 100%;
         text-align: center;
         overflow: hidden;
@@ -30,6 +37,7 @@
     }
 
     .ourNav ul li {
-        padding:15px;
+        margin: 6% 0;
+        padding: 1px 8%;
     }
 }

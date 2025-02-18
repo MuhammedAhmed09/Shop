@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.css'
 import { Link } from 'react-router'
 import { FaBars } from 'react-icons/fa'
+import { useSelector } from 'react-redux'
 
 const Header = () => {
   const toggle = () => {
@@ -13,15 +14,17 @@ const Header = () => {
       links.style.maxHeight = '0px'
     }
   }
+
+  const userInfo = useSelector((state) => state.rootReducer.userInfo);
   
   return (
     <div className='ourNav header bg-transparent h-[55px] flex items-center px-[15%] justify-between p-2 '>
-        <p className='text-2xl font-semibold'>Site Name</p>  
+        <p className='text-2xl text-red-600 font-serif font-semibold'>Site-Name</p>  
       <div>
         <ul id='Links' className='flex text-1xl items-center max-h-0 font-semibold'>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link className='mx-9' to='/cart'>Cart</Link></li>
-          <li><Link to='/reg'>Regester</Link></li>
+          <li className=' hover:bg-red-600 hover:text-white rounded'><Link to='/'>Home</Link></li>
+          <li className=' hover:bg-red-600 hover:text-white rounded'><Link to='/cart'>Cart</Link></li>
+          <li className=' hover:bg-red-600 hover:text-white rounded'>{userInfo ? (<span className='font-semibold'>{userInfo.userName}</span>) : (<Link className='font-semibold' to="/reg">Regester</Link>)}</li>
         </ul>
         <i onClick={() => toggle()}><FaBars /></i>
       </div>
@@ -29,4 +32,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header 
