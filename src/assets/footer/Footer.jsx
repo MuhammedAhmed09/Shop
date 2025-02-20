@@ -3,8 +3,8 @@ import { FaFacebookF, FaLinkedinIn, FaSquareInstagram } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <div className='bottom-0'>
-      <div className='grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 gap-5 bg-black text-white p-10'>
+    <div>
+      <div className='grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 gap-5 bg-black bottom-0 text-white p-10'>
 
         <div className='mb-2'>
           <div>

@@ -19,6 +19,24 @@ const initialState = {
         }
       },
 
+      inCrement: (state, action) => {
+        const item = state.product.find((item) => item.id === action.payload)
+        item.quantity ++
+      },
+
+      deCrement: (state, action) => {
+        const item = state.product.find((item) => item.id === action.payload) 
+        if(item.quantity === 1){item.quantity === 1} else(item.quantity --)
+      },
+
+      Removeitem: (state, action) => {
+        state.product = state.product.filter((item) => item.id !== action.payload)
+      },
+
+      cleanCart: (state) => {
+        state.product = []
+      },
+
       // For users
       getUserName: (state, action) => {
         state.userInfo = action.payload
@@ -27,7 +45,7 @@ const initialState = {
     },
   })
   
-  export const {addToCart, getUserName} = counterSlice.actions
+  export const {addToCart, deCrement, inCrement, Removeitem, cleanCart, getUserName} = counterSlice.actions
 
   
   export default counterSlice.reducer
